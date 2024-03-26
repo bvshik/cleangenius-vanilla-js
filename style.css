@@ -146,8 +146,9 @@ header{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1031%26quot%3b)' fill='none'%3e%3cpath d='M-207.55 149.31C-101.92 150.03-2.29 249.31 202.98 249.31 408.24 249.31 356.05 113.29 613.5 149.31 870.96 185.33 843.63 777.68 1024.03 887.4' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-144.17 9.52C-3.79 16.8 92.33 197.18 356.43 265.52 620.53 333.86 489.39 711.36 606.73 801.28' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-174.67 199.07C-29.29 203.5 46.59 396.03 362.28 423.07 677.96 450.11 726.53 843.82 899.22 872.08' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-158.61 584.82C-30.19 566.53 30.59 259.19 249.82 264.82 469.05 270.45 488.49 819.76 658.25 904.51' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-1.35 185.46C195.13 189.37 404.34 414.11 739.08 449.46 1073.83 484.81 965.1 889.88 1109.3 946.61' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1031'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     width: 100%;
     height: 100%;
+    background-size: auto 100%;
+    background-repeat:no-repeat;
     opacity: 5%;
-    background-repeat: no-repeat;
 }
 
     .bg-welcome-1{
@@ -159,23 +160,31 @@ header{
         clip-path: polygon(80.3% 0%, 100% 0%, 100% 100%, 70% 100%);
     }
 .bg-welcome-3{
-    width: 45%;
-    z-index: -1;
-    padding-top: 20dvh;
     position: absolute;
+    z-index: -1;
     right: 0;
+    bottom: 10dvh;
+    width: 25%;
+    height: 75vh;
+    overflow: hidden;
+    padding-right: 33%;
+}
+
+.bg-welcome-3 img{
+    height: 100%;
 }
 
 .content-welcome{
     transform: translateY(25dvh) translateX(4dvw);
     text-align: left;
-    width: 60%;
+    width: 55%;
+    margin-bottom: 200px;
 }
-
 .textbox-welcome{
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 500;
-    display: inline;
+    display: inline-block;
+    max-width: 700px;
 }
 
 .textbox-welcome-2{
@@ -183,6 +192,7 @@ header{
     padding-bottom: 3vh;
     font-size: 18px;
     color: var(--color-unselected);
+    max-width: 700px;
 }
 
 .btn-calltoday{
@@ -190,14 +200,46 @@ header{
     color: white;
     background-color: var(--color-selected);
     border: 0.125rem solid var(--color-selected);
+    margin-right: 25px;
 }
 
-.btn-calltoday>svg{
+.btn-calltoday svg{
     fill: var(--color-accentwhite);
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 1ms ease, transform 0.2s ease-in-out;
 }
 
-.btn-calltoday>svg:hover{
+.btn-calltoday:hover svg{
     fill: var(--color-selected);
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 1ms ease, transform 0.2s ease-in-out;
+}
+
+.telephone-svg-btn{
+    transform: translateY(2px);
+}
+
+.btn-nowhiring{
+    font-weight: 500;
+    background-color: white;
+    border-color: var(--color-accentwhite);
+    color: var(--color-unselected);
+}
+
+.btn-nowhiring svg{
+    fill: var(--color-unselected);
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 1ms ease, transform 0.2s ease-in-out;
+}
+
+.btn-nowhiring:hover svg{
+    fill: var(--color-selected);
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 1ms ease, transform 0.2s ease-in-out;
+}
+
+.briefcase-svg-btn{
+    transform: translateY(2px);
 }
 
     .partners{
