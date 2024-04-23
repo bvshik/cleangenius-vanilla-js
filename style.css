@@ -325,10 +325,12 @@ header {
 /* .dropdown-menu > a:last-child {
   padding-bottom: 0px;
 } */
+.test {
+  display: none;
+}
 
 .active {
   display: block;
-  transform: translateY(10px);
 }
 
 .btn-dropdown {
