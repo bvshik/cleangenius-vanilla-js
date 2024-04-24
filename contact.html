@@ -50,7 +50,7 @@
                         <input type="email" id="email" placeholder="twoj@email.com" required>
                     </div>
                     <div class="inputBox">Numer telefonu
-                        <input type="number" id="phoneNumber" maxlength="9" placeholder="123456789" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        <input type="number" id="phoneNumber" min="9" maxlength="9" placeholder="123456789" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                     </div>
                     <div class="inputBox">Twoja wiadomość
                         <textarea id="messageContent" rows="10" cols="30" placeholder="Wpisz swoją wiadomość... (maks. 300 znaków)" minlength="16" maxlength="300" required></textarea>
