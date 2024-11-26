@@ -1,0 +1,17 @@
+{
+  "name": "projzal",
+  "version": "1.0.0",
+  "description": "Mock-up business web page project for Uni.",
+  "main": "buttonActions.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.5"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "type": "module"
+}

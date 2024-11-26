@@ -47,7 +47,10 @@
                         <input type="text" id="name" placeholder="Jan Kowalski" required>
                     </div>
                     <div class="inputBox">E-mail
-                        <input type="email" id="email" placeholder="twoj@email.com" required>
+                        <input type="email" 
+                        id="email" placeholder="twoj@email.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        required>
                     </div>
                     <div class="inputBox">Numer telefonu
                         <input type="number" id="phoneNumber" min="9" maxlength="9" placeholder="123456789" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
